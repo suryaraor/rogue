@@ -211,6 +211,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-decoration: none; /* Remove underline */
+            color: inherit; /* Inherit text color */
         }
         .key-feature i {
             font-size: 2rem;
@@ -248,6 +250,8 @@
             border-radius: 8px;
             max-width: 500px;
             text-align: left;
+            position: relative;
+            z-index: 1001; /* Ensure content is above the background */
         }
         .feature-modal-close {
             position: absolute;
@@ -259,6 +263,7 @@
             background: rgba(0, 0, 0, 0.5);
             padding: 0.5rem;
             border-radius: 50%;
+            z-index: 1002;
         }
         .feature-modal-close:hover {
             background: rgba(255, 69, 0, 0.8);
@@ -305,7 +310,7 @@
                 <p>Blind Spot Monitor</p>
             </a>
             <a href="#feature-bluetooth" class="key-feature">
-                <i class="fas fa-bluetooth"></i>
+                <i class="fas fa-wave-square"></i> <!-- Alternate icon for Bluetooth -->
                 <p>Bluetooth</p>
             </a>
             <a href="#feature-interior-accents" class="key-feature">
@@ -340,98 +345,98 @@
     </section>
 
     <div id="feature-awd" class="feature-modal">
-        <a href="#key-features" class="feature-modal-close">&times;</a>
+        <a href="#key-features" class="feature-modal-close">&times;</a> <!-- Close button -->
         <div class="feature-modal-content">
             <h3>AWD</h3>
             <p>All-Wheel Drive (AWD) provides enhanced traction and control, making it easier to drive in challenging conditions like snow, rain, or rough terrain.</p>
         </div>
     </div>
     <div id="feature-adaptive-cruise" class="feature-modal">
-        <a href="#key-features" class="feature-modal-close">&times;</a>
+        <a href="#key-features" class="feature-modal-close">&times;</a> <!-- Close button -->
         <div class="feature-modal-content">
             <h3>Adaptive Cruise Control</h3>
             <p>Adaptive Cruise Control automatically adjusts your speed to maintain a safe distance from the vehicle ahead, ensuring a stress-free driving experience.</p>
         </div>
     </div>
     <div id="feature-android-auto" class="feature-modal">
-        <a href="#key-features" class="feature-modal-close">&times;</a>
+        <a href="#key-features" class="feature-modal-close">&times;</a> <!-- Close button -->
         <div class="feature-modal-content">
             <h3>Android Auto</h3>
             <p>Android Auto allows you to connect your Android smartphone to the car's infotainment system, providing access to apps, navigation, and music.</p>
         </div>
     </div>
     <div id="feature-apple-carplay" class="feature-modal">
-        <a href="#key-features" class="feature-modal-close">&times;</a>
+        <a href="#key-features" class="feature-modal-close">&times;</a> <!-- Close button -->
         <div class="feature-modal-content">
             <h3>Apple CarPlay</h3>
             <p>Apple CarPlay integrates your iPhone with the car's infotainment system, enabling hands-free calls, navigation, and access to your favorite apps.</p>
         </div>
     </div>
     <div id="feature-backup-camera" class="feature-modal">
-        <a href="#key-features" class="feature-modal-close">&times;</a>
+        <a href="#key-features" class="feature-modal-close">&times;</a> <!-- Close button -->
         <div class="feature-modal-content">
             <h3>Backup Camera</h3>
             <p>The Backup Camera provides a clear view of the area behind your vehicle, making parking and reversing safer and easier.</p>
         </div>
     </div>
     <div id="feature-blind-spot" class="feature-modal">
-        <a href="#key-features" class="feature-modal-close">&times;</a>
+        <a href="#key-features" class="feature-modal-close">&times;</a> <!-- Close button -->
         <div class="feature-modal-content">
             <h3>Blind Spot Monitor</h3>
             <p>The Blind Spot Monitor alerts you to vehicles in your blind spots, helping you change lanes safely.</p>
         </div>
     </div>
     <div id="feature-bluetooth" class="feature-modal">
-        <a href="#key-features" class="feature-modal-close">&times;</a>
+        <a href="#key-features" class="feature-modal-close">&times;</a> <!-- Close button -->
         <div class="feature-modal-content">
             <h3>Bluetooth</h3>
             <p>Bluetooth connectivity allows you to make hands-free calls and stream music wirelessly from your smartphone.</p>
         </div>
     </div>
     <div id="feature-interior-accents" class="feature-modal">
-        <a href="#key-features" class="feature-modal-close">&times;</a>
+        <a href="#key-features" class="feature-modal-close">&times;</a> <!-- Close button -->
         <div class="feature-modal-content">
             <h3>Interior Accents</h3>
             <p>Interior accents add a touch of style and sophistication to the cabin, enhancing the overall driving experience.</p>
         </div>
     </div>
     <div id="feature-keyless-entry" class="feature-modal">
-        <a href="#key-features" class="feature-modal-close">&times;</a>
+        <a href="#key-features" class="feature-modal-close">&times;</a> <!-- Close button -->
         <div class="feature-modal-content">
             <h3>Keyless Entry</h3>
             <p>Keyless entry allows you to unlock and start your vehicle without removing the key fob from your pocket or bag.</p>
         </div>
     </div>
     <div id="feature-lane-departure" class="feature-modal">
-        <a href="#key-features" class="feature-modal-close">&times;</a>
+        <a href="#key-features" class="feature-modal-close">&times;</a> <!-- Close button -->
         <div class="feature-modal-content">
             <h3>Lane Departure Warning</h3>
             <p>Lane Departure Warning alerts you if you unintentionally drift out of your lane, helping you stay on course.</p>
         </div>
     </div>
     <div id="feature-parking-sensors" class="feature-modal">
-        <a href="#key-features" class="feature-modal-close">&times;</a>
+        <a href="#key-features" class="feature-modal-close">&times;</a> <!-- Close button -->
         <div class="feature-modal-content">
             <h3>Parking Sensors / Assist</h3>
             <p>Parking sensors assist you in parking by detecting obstacles and providing audible alerts to help you avoid collisions.</p>
         </div>
     </div>
     <div id="feature-power-seats" class="feature-modal">
-        <a href="#key-features" class="feature-modal-close">&times;</a>
+        <a href="#key-features" class="feature-modal-close">&times;</a> <!-- Close button -->
         <div class="feature-modal-content">
             <h3>Power Seats</h3>
             <p>Power seats allow you to easily adjust the seating position for optimal comfort and support.</p>
         </div>
     </div>
     <div id="feature-satellite-radio" class="feature-modal">
-        <a href="#key-features" class="feature-modal-close">&times;</a>
+        <a href="#key-features" class="feature-modal-close">&times;</a> <!-- Close button -->
         <div class="feature-modal-content">
             <h3>Satellite Radio Ready</h3>
             <p>Satellite radio provides access to a wide range of music, news, and entertainment channels, ensuring you stay entertained on the road.</p>
         </div>
     </div>
     <div id="feature-wifi-hotspot" class="feature-modal">
-        <a href="#key-features" class="feature-modal-close">&times;</a>
+        <a href="#key-features" class="feature-modal-close">&times;</a> <!-- Close button -->
         <div class="feature-modal-content">
             <h3>WiFi Hotspot</h3>
             <p>The WiFi hotspot feature allows you to connect your devices to the internet while on the go, keeping you connected wherever you are.</p>
@@ -631,6 +636,14 @@
         }
         document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('.collapsible').forEach(section => section.style.display = 'none');
+        });
+        document.addEventListener('click', function (event) {
+            const modals = document.querySelectorAll('.feature-modal');
+            modals.forEach(modal => {
+                if (modal === event.target) {
+                    window.location.hash = '#key-features'; // Redirect to the key features section
+                }
+            });
         });
     </script>
 </body>
