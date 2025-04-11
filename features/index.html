@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nissan Rogue Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .feature-box {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .feature-box:hover {
+            transform: scale(1.05);
+        }
+        .icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="feature-box" onclick="toggleDetails('feature1')">
+    <div class="icon">🚗</div>
+    <h3>ProPILOT Assist 2.0</h3>
+    <div id="feature1" class="details">
+        Enhanced semi-autonomous driving support with adaptive cruise control and lane centering.
+    </div>
+</div>
+
+<div class="feature-box" onclick="toggleDetails('feature2')">
+    <div class="icon">🌧️</div>
+    <h3>AWD Availability</h3>
+    <div id="feature2" class="details">
+        Intelligent all-wheel drive for better traction in various conditions.
+    </div>
+</div>
+
+<div class="feature-box" onclick="toggleDetails('feature3')">
+    <div class="icon">📦</div>
+    <h3>Spacious Interior</h3>
+    <div id="feature3" class="details">
+        Ample cargo space with flexible seating configurations.
+    </div>
+</div>
+
+<div class="feature-box" onclick="toggleDetails('feature4')">
+    <div class="icon">🛡️</div>
+    <h3>Advanced Safety</h3>
+    <div id="feature4" class="details">
+        Includes automatic emergency braking and blind-spot monitoring.
+    </div>
+</div>
+
+<div class="feature-box" onclick="toggleDetails('feature5')">
+    <div class="icon">📱</div>
+    <h3>NissanConnect</h3>
+    <div id="feature5" class="details">
+        Intuitive touchscreen interface with Apple CarPlay and Android Auto.
+    </div>
+</div>
+
+<div class="feature-box" onclick="toggleDetails('feature6')">
+    <div class="icon">🎶</div>
+    <h3>Bose Audio System</h3>
+    <div id="feature6" class="details">
+        High-quality sound system for an enhanced audio experience.
+    </div>
+</div>
+
+<div class="feature-box" onclick="toggleDetails('feature7')">
+    <div class="icon">☀️</div>
+    <h3>Panoramic Sunroof</h3>
+    <div id="feature7" class="details">
+        Available panoramic moonroof for an open cabin feel.
+    </div>
+</div>
+
+<div class="feature-box" onclick="toggleDetails('feature8')">
+    <div class="icon">📊</div>
+    <h3>Digital Dashboard</h3>
+    <div id="feature8" class="details">
+        12.3-inch digital display for customizable information.
+    </div>
+</div>
+
+<div class="feature-box" onclick="toggleDetails('feature9')">
+    <div class="icon">⛽</div>
+    <h3>Fuel Efficiency</h3>
+    <div id="feature9" class="details">
+        Competitive fuel economy ratings for daily driving.
+    </div>
+</div>
+
+<div class="feature-box" onclick="toggleDetails('feature10')">
+    <div class="icon">✨</div>
+    <h3>Stylish Design</h3>
+    <div id="feature10" class="details">
+        Modern styling with LED headlights and a sporty profile.
+    </div>
+</div>
+
+<script>
+    function toggleDetails(featureId) {
+        const details = document.getElementById(featureId);
+        details.style.display = details.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>
