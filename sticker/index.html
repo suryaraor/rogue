@@ -7,7 +7,55 @@
     <link rel="stylesheet" href="../styles.css"> <!-- Link to CSS file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-      
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 1rem;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav ul li a:hover {
+            color: #ff4500;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2980b9;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+        }
+        .back-to-top:hover {
+            background-color: #1f6391;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible grid */
+            gap: 20px; /* Space between boxes */
+            margin-top: 20px;
+        }
+        .feature-box {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
@@ -23,6 +71,18 @@
     </nav>
         <a href="../" class="home-button"><i class="fas fa-home"></i> Home</a>
         <h1>2023 Nissan Rogue SV AWD - Window Sticker Features</h1>
+
+        <div class="feature-grid">
+            <div class="feature-box">
+                <h3><i class="fas fa-cogs"></i> 1.5L DOHC 12-Valve Turbocharged Engine</h3>
+                <p><strong>Description:</strong> A 1.5-liter, 3-cylinder engine with Double Overhead Camshaft (DOHC) and 12 valves, equipped with a turbocharger.</p>
+            </div>
+            <div class="feature-box">
+                <h3><i class="fas fa-tachometer-alt"></i> 201 hp, 225 lb-ft Torque</h3>
+                <p><strong>Description:</strong> Engine power output: 201 horsepower and 225 pound-feet of torque.</p>
+            </div>
+            <!-- Repeat similar structure for other features -->
+        </div>
 
         <h2 onclick="toggleSection(this)">Mechanical & Performance</h2>
         <div class="section-content">
@@ -196,12 +256,25 @@
             <p class="highlight"><strong>Key Takeaway:</strong> The 2023 Nissan Rogue SV AWD is a well-equipped compact SUV with a powerful yet efficient engine, advanced safety features, modern convenience technologies, and a robust infotainment system, making it a versatile choice for families and commuters.</p>
         </div>
     </div>
-
+    <div class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
     <script>
         function toggleSection(header) {
             const content = header.nextElementSibling;
             content.classList.toggle('active');
         }
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        window.addEventListener('scroll', () => {
+            const backToTopButton = document.querySelector('.back-to-top');
+            if (window.scrollY > 200) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
     </script>
 </body>
 </html>

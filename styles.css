@@ -10,17 +10,18 @@ body {
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9); /* Slightly darker background */
     color: white;
-    padding: 0.5rem 1rem;
-    position: fixed; /* Make it fixed */
+    padding: 1rem; /* Increased padding for better spacing */
+    position: fixed;
     top: 0;
-    left: 0; /* Align to the left */
-    width: 100%; /* Full width */
-    z-index: 1000; /* Ensure it stays on top */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
 nav .logo {
@@ -33,7 +34,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem; /* Increased gap for better spacing */
 }
 
 nav ul li {
@@ -44,10 +45,11 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
+    transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #ff4500; /* Highlight color on hover */
 }
 
 header {
@@ -452,26 +454,28 @@ strong {
 }
 
 .feature-box {
-    background: #fff; /* White background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    padding: 20px; /* Inner padding */
-    margin: 15px; /* Space around the box */
-    text-align: center; /* Centered text */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .feature-box:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .feature-box i {
-    font-size: 40px; /* Icon size */
-    margin-bottom: 10px; /* Space below the icon */
+    font-size: 2.5rem; /* Larger icon size */
+    color: #ff4500;
+    margin-bottom: 10px;
 }
 
 .feature-box p {
-    font-weight: bold; /* Bold text for feature description */
-    margin-top: 10px; /* Space above the text */
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1rem; /* Consistent font size */
 }

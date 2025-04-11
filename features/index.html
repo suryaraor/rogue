@@ -32,151 +32,180 @@
 </nav>
 
 <section class="container mt-4">
- 
-                   <!-- Feature Boxes -->
-<div class="feature-box" onclick="toggleDetails('feature1')">
-    <div class="icon">🔧</div>
-    <h3>1.5L VC-Turbo 3-cylinder Engine</h3>
-    <div id="feature1" class="details">
-        A powerful and efficient engine offering dynamic performance.
-    </div>
-</div>
-
-<div class="feature-box" onclick="toggleDetails('feature2')">
-    <div class="icon">🚗</div>
-    <h3>Front-Wheel Drive (FWD)</h3>
-    <div id="feature2" class="details">
-        Provides enhanced traction and fuel efficiency.
-    </div>
-</div>
-
-<div class="feature-box" onclick="toggleDetails('feature3')">
-    <div class="icon">⚙️</div>
-    <h3>Xtronic CVT®</h3>
-    <div id="feature3" class="details">
-        Continuously variable transmission for smooth acceleration.
-    </div>
-</div>
-
-<div class="feature-box" onclick="toggleDetails('feature4')">
-    <div class="icon">🌱</div>
-    <h3>Eco/Sport Modes</h3>
-    <div id="feature4" class="details">
-        Select between eco-friendly or sporty driving preferences.
-    </div>
-</div>
-
-<div class="feature-box" onclick="toggleDetails('feature5')">
-    <div class="icon">🛡️</div>
-    <h3>Nissan Safety Shield® 360</h3>
-    <div id="feature5" class="details">
-        A suite of safety features designed to enhance protection.
-    </div>
-</div>
-
-<div class="feature-box" onclick="toggleDetails('feature6')">
-    <div class="icon">⚠️</div>
-    <h3>Automatic Emergency Braking</h3>
-    <div id="feature6" class="details">
-        Detects potential collisions and applies brakes automatically.
-    </div>
-</div>
-
-<div class="feature-box" onclick="toggleDetails('feature7')">
-    <div class="icon">🔍</div>
-    <h3>Blind Spot Warning</h3>
-    <div id="feature7" class="details">
-        Alerts you to vehicles in your blind spots.
-    </div>
-</div>
-
-<div class="feature-box" onclick="toggleDetails('feature8')">
-    <div class="icon">🔄</div>
-    <h3>Rear Cross Traffic Alert</h3>
-    <div id="feature8" class="details">
-        Warns of approaching traffic when reversing.
-    </div>
-</div>
-
-<div class="feature-box" onclick="toggleDetails('feature9')">
-    <div class="icon">🚦</div>
-    <h3>Lane Departure Warning</h3>
-    <div id="feature9" class="details">
-        Alerts if you unintentionally drift from your lane.
-    </div>
-</div>
-
-<div class="feature-box" onclick="toggleDetails('feature10')">
-    <div class="icon">🌟</div>
-    <h3>High Beam Assist</h3>
-    <div id="feature10" class="details">
-        Automatically adjusts high beams based on traffic conditions.
-    </div>
-</div>
-
-<div class="feature-box" onclick="toggleDetails('feature11')">
-    <div class="icon">⚠️</div>
-    <h3>Intelligent Forward Collision Warning</h3>
-    <div id="feature11" class="details">
-        Detects and warns of potential frontal collisions.
-    </div>
-</div>
-
-<div class="feature-box" onclick="toggleDetails('feature12')">
-    <div class="icon">👁️</div>
-    <h3>Intelligent Driver Alertness</h3>
-    <div id="feature12" class="details">
-        Monitors driver behavior and alerts when fatigued.
-    </div>
-</div>
-
-<div class="feature-box" onclick="toggleDetails('feature13')">
-    <div class="icon">🔙</div>
-    <h3>Rear Automatic Braking</h3>
-    <div id="feature13" class="details">
-        Applies brakes when reversing to avoid collisions.
-    </div>
-</div>
-
-<div class="feature-box" onclick="toggleDetails('feature14')">
-    <div class="icon">🚀</div>
-    <h3>ProPILOT Assist</h3>
-    <div id="feature14" class="details">
-        A driver assistance feature that helps with steering and speed.
-    </div>
-</div>
-
-<div class="feature-box" onclick="toggleDetails('feature15')">
-    <div class="icon">🛣️</div>
-    <h3>Intelligent Lane Intervention</h3>
-    <div id="feature15" class="details">
-        Provides gentle steering assistance to keep you in your lane.
-    </div>
-</div>
-
-<div class="feature-box" onclick="toggleDetails('feature16')">
-    <div class="icon">👁️‍🗨️</div>
-    <h3>Intelligent Blind Spot Intervention</h3>
-    <div id="feature16" class="details">
-        Helps prevent lane changes into occupied blind spots.
-    </div>
-</div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card feature-box shadow-sm" onclick="toggleDetails('feature1')">
+                <div class="card-body text-center">
+                    <div class="icon">🔧</div>
+                    <h5 class="card-title">1.5L VC-Turbo 3-cylinder Engine</h5>
+                    <p id="feature1" class="details" style="display: none;">
+                        A powerful and efficient engine offering dynamic performance.
+                    </p>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Item 2</h5>
-                    <p class="card-text">Description for item 2.</p>
+            <div class="card feature-box shadow-sm" onclick="toggleDetails('feature2')">
+                <div class="card-body text-center">
+                    <div class="icon">🚗</div>
+                    <h5 class="card-title">Front-Wheel Drive (FWD)</h5>
+                    <p id="feature2" class="details" style="display: none;">
+                        Provides enhanced traction and fuel efficiency.
+                    </p>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Item 3</h5>
-                    <p class="card-text">Description for item 3.</p>
+            <div class="card feature-box shadow-sm" onclick="toggleDetails('feature3')">
+                <div class="card-body text-center">
+                    <div class="icon">⚙️</div>
+                    <h5 class="card-title">Xtronic CVT®</h5>
+                    <p id="feature3" class="details" style="display: none;">
+                        Continuously variable transmission for smooth acceleration.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card feature-box shadow-sm" onclick="toggleDetails('feature4')">
+                <div class="card-body text-center">
+                    <div class="icon">🌱</div>
+                    <h5 class="card-title">Eco/Sport Modes</h5>
+                    <p id="feature4" class="details" style="display: none;">
+                        Select between eco-friendly or sporty driving preferences.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card feature-box shadow-sm" onclick="toggleDetails('feature5')">
+                <div class="card-body text-center">
+                    <div class="icon">🛡️</div>
+                    <h5 class="card-title">Nissan Safety Shield® 360</h5>
+                    <p id="feature5" class="details" style="display: none;">
+                        A suite of safety features designed to enhance protection.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card feature-box shadow-sm" onclick="toggleDetails('feature6')">
+                <div class="card-body text-center">
+                    <div class="icon">⚠️</div>
+                    <h5 class="card-title">Automatic Emergency Braking</h5>
+                    <p id="feature6" class="details" style="display: none;">
+                        Detects potential collisions and applies brakes automatically.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card feature-box shadow-sm" onclick="toggleDetails('feature7')">
+                <div class="card-body text-center">
+                    <div class="icon">🔍</div>
+                    <h5 class="card-title">Blind Spot Warning</h5>
+                    <p id="feature7" class="details" style="display: none;">
+                        Alerts you to vehicles in your blind spots.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card feature-box shadow-sm" onclick="toggleDetails('feature8')">
+                <div class="card-body text-center">
+                    <div class="icon">🔄</div>
+                    <h5 class="card-title">Rear Cross Traffic Alert</h5>
+                    <p id="feature8" class="details" style="display: none;">
+                        Warns of approaching traffic when reversing.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card feature-box shadow-sm" onclick="toggleDetails('feature9')">
+                <div class="card-body text-center">
+                    <div class="icon">🚦</div>
+                    <h5 class="card-title">Lane Departure Warning</h5>
+                    <p id="feature9" class="details" style="display: none;">
+                        Alerts if you unintentionally drift from your lane.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card feature-box shadow-sm" onclick="toggleDetails('feature10')">
+                <div class="card-body text-center">
+                    <div class="icon">🌟</div>
+                    <h5 class="card-title">High Beam Assist</h5>
+                    <p id="feature10" class="details" style="display: none;">
+                        Automatically adjusts high beams based on traffic conditions.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card feature-box shadow-sm" onclick="toggleDetails('feature11')">
+                <div class="card-body text-center">
+                    <div class="icon">⚠️</div>
+                    <h5 class="card-title">Intelligent Forward Collision Warning</h5>
+                    <p id="feature11" class="details" style="display: none;">
+                        Detects and warns of potential frontal collisions.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card feature-box shadow-sm" onclick="toggleDetails('feature12')">
+                <div class="card-body text-center">
+                    <div class="icon">👁️</div>
+                    <h5 class="card-title">Intelligent Driver Alertness</h5>
+                    <p id="feature12" class="details" style="display: none;">
+                        Monitors driver behavior and alerts when fatigued.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card feature-box shadow-sm" onclick="toggleDetails('feature13')">
+                <div class="card-body text-center">
+                    <div class="icon">🔙</div>
+                    <h5 class="card-title">Rear Automatic Braking</h5>
+                    <p id="feature13" class="details" style="display: none;">
+                        Applies brakes when reversing to avoid collisions.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card feature-box shadow-sm" onclick="toggleDetails('feature14')">
+                <div class="card-body text-center">
+                    <div class="icon">🚀</div>
+                    <h5 class="card-title">ProPILOT Assist</h5>
+                    <p id="feature14" class="details" style="display: none;">
+                        A driver assistance feature that helps with steering and speed.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card feature-box shadow-sm" onclick="toggleDetails('feature15')">
+                <div class="card-body text-center">
+                    <div class="icon">🛣️</div>
+                    <h5 class="card-title">Intelligent Lane Intervention</h5>
+                    <p id="feature15" class="details" style="display: none;">
+                        Provides gentle steering assistance to keep you in your lane.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card feature-box shadow-sm" onclick="toggleDetails('feature16')">
+                <div class="card-body text-center">
+                    <div class="icon">👁️‍🗨️</div>
+                    <h5 class="card-title">Intelligent Blind Spot Intervention</h5>
+                    <p id="feature16" class="details" style="display: none;">
+                        Helps prevent lane changes into occupied blind spots.
+                    </p>
                 </div>
             </div>
         </div>
